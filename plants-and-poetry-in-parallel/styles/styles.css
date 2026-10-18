@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-.save-pdf-button {
+.save-button {
   position: fixed;
   top: 8px;
   right: 12px;
@@ -37,22 +37,22 @@ body {
   text-decoration: none;
   transition: color 200ms ease;
 }
-.save-pdf-button:hover, .save-pdf-button:active, .save-pdf-button:focus-visible {
+.save-button:hover, .save-button:active, .save-button:focus-visible {
   color: #d2cfd2;
 }
 
 /* print logic: break up into pdf pages */
 @media print {
-  .save-pdf-button {
+  .save-button {
     display: none;
   }
   body {
     background: #fff;
   }
-  .pdf-page-container {
+  .pdf-pages {
     width: 100%;
   }
-  .pdf-page-container + .pdf-page-container {
+  .pdf-pages + .pdf-pages {
     -moz-column-break-before: page;
          break-before: page;
   }

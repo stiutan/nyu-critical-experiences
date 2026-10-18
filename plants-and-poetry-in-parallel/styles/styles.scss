@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-.save-pdf-button {
+.save-button {
   position: fixed;
   top: 8px;
   right: 12px;
@@ -53,7 +53,7 @@ body {
 /* print logic: break up into pdf pages */
 
 @media print {
-  .save-pdf-button {
+  .save-button {
     display: none;
   }
 
@@ -61,7 +61,7 @@ body {
     background: #fff;
   }
 
-  .pdf-page-container {
+  .pdf-pages {
     width: 100%;
 
     & + & {
